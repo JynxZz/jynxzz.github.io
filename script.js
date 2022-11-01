@@ -12,5 +12,5 @@ async function getFollowers(profileId) {
 async function setFollowers(profileId) {
     followers.textContent = await getFollowers(profileId);
 }
-// setFollowers('jynxzz')
-setInterval(() => setFollowers('jynxzz'), 1000);
+setFollowers('jynxzz')
+// setInterval(() => setFollowers('jynxzz'), 1000);
