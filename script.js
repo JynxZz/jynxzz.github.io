@@ -1,7 +1,7 @@
 const followers = document.getElementById('followers');
 
 async function getFollowers(profileId) {
-    const url      = `https://instagram.com/${profileId}/?__a=1&__d=dis`;
+    const url      = `https://instagram.com/${profileId}/?__a=1`;
     const response = await fetch(url);
     // console.log(response);
     const data     = await response.json();
