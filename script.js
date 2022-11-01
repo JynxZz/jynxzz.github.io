@@ -14,3 +14,7 @@ async function setFollowers(profileId) {
 }
 setFollowers('jynxzz')
 // setInterval(() => setFollowers('jynxzz'), 1000);
+
+
+// No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to 'no-cors' to fetch the resource with CORS disabled.
+//         Failed to load resource: net::ERR_FAILED
