@@ -1,8 +1,9 @@
+
 const followers = document.getElementById('followers');
 
 async function getFollowers(profileId) {
     const url      = `https://instagram.com/${profileId}/channel/?__a=1`;
-    const response = await fetch(url);
+    const response = await fetch(url, {mode: 'cors'});
     // console.log(response);
     const data     = await response.json();
 
@@ -14,7 +15,3 @@ async function setFollowers(profileId) {
 }
 setFollowers('jynxzz')
 // setInterval(() => setFollowers('jynxzz'), 1000);
-
-
-// No 'Access-Control-Allow-Origin' header is present on the requested resource. If an opaque response serves your needs, set the request's mode to 'no-cors' to fetch the resource with CORS disabled.
-//         Failed to load resource: net::ERR_FAILED
